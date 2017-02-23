@@ -9,6 +9,6 @@ public class Planet extends Place
 {
     Quest quest;
     public Planet(String n, String d) {
-        
+       
     }
 }
