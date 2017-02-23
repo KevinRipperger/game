@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Phillip()
+comment1.params=
+comment1.target=Map\ getMap()
+comment2.params=x
+comment2.target=void\ move(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=
+comment4.target=java.lang.String\ getDescription()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
