@@ -12,14 +12,14 @@ public class Map {
         map=new Place[3][3];
         map[0][0]=new Place("Earth","Where Philip's quest begins");
         map[0][0].statusCurrent();
-        map[0][1] = new Place();
-        map[0][2] = new Place();
-        map[1][0] = new Place();
-        map[1][1] = new Place();
-        map[1][2] = new Place();
-        map[2][0] = new Place();
-        map[2][1] = new Place();
-        map[2][2] = new Place("Bleem Town", "Planet of the Belemians");
+        map[0][1] = new Planet();
+        map[0][2] = new Shop();
+        map[1][0] = new Planet();
+        map[1][1] = new Planet();
+        map[1][2] = new Planet();
+        map[2][0] = new Shop();
+        map[2][1] = new Planet();
+        map[2][2] = new Planet("Bleem Town", "Planet of the Belemians");
         map[2][2].setStatus("B");
     }
     

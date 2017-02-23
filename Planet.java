@@ -7,8 +7,17 @@
  */
 public class Planet extends Place
 {
-    Quest quest;
-    public Planet(String n, String d) {
-       
+    private Quest quest;
+    private int x;
+    private int y;
+    public Planet(String n, String d, int x, int y) {
+       super(n,d);
+       this.x = x;
+       this.y = y;
+       getQuest(x,y);
+    }
+    
+    public void getQuest(int x, int y) {
+        quest = new Quest();
     }
 }
