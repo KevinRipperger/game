@@ -7,8 +7,6 @@
  */
 public class Shop extends Place
 {
-
-    
     public Shop(String n, String d) {
         super (n,d);
     }
