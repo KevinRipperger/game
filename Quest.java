@@ -110,7 +110,59 @@ public class Quest extends NamedThing {
             System.out.print("'At least i got the fuel' you think as you board your ship.");
             complete(x,reward);
         }
-
+    }
+    
+    public void getYourAnus(Phillip x) {
+        String response="";
+        Scanner shane = new Scanner(System.in);
+        System.out.print("You land on a planet, barren and desolate, its youranus");
+        shane.nextLine();
+        System.out.println("Walking out of the poopdeck, you see Shane Simon!"); 
+        shane.nextLine();
+        System.out.println("The king of Youranus itself!, dancing and smiling as he has not seen you in millenia");
+        shane.nextLine();
+        System.out.println("King - \"Hello Earthly visitor, its me, Shane, the King of Youranus. It's been so long since I have seen you! Have you come to play... Simon Says?\"");
+        shane.nextLine();
+        System.out.println("Dr. Shlom - \"Ah, it has been a while Shane, and I am afraid that my fuel is running low. Mind if I haggle my way for some fuel?\"");
+        shane.nextLine();
+        System.out.println("King - \"Oh of course! But you have to beat me in a game of... Simon says!\"");
+        shane.nextLine();
+        System.out.println("Dr. Shlom - \"God Damnit\"");
+        shane.nextLine();
+        System.out.println("\f");
+        System.out.println("   _____ _                          _____                 ");
+        System.out.println("  / ____(_)                        / ____|                ");
+        System.out.println(" | (___  _ _ __ ___   ___  _ __   | (___   __ _ _   _ ___ ");
+        System.out.println("  \\___ \\| | '_ ` _ \\ / _ \\| '_ \\   \\___ \\ / _` | | | / __|");
+        System.out.println("  ____) | | | | | | | (_) | | | |  ____) | (_| | |_| \\__ \\");
+        System.out.println(" |_____/|_|_| |_| |_|\\___/|_| |_| |_____/ \\__,_|\\__, |___/");
+        System.out.println("                                                 __/ |    ");
+        System.out.println("                                                |___/     ");
+        System.out.println("King - \"Welcome to Siimonnn Sayssss..\"");
+        shane.nextLine();
+        System.out.println("Dr. Shlom - \"Oh God\"");
+        shane.nextLine();
+        System.out.println("King - \"Round One- Simon says jump\""); 
+        response = shane.nextLine();
+        if(!response.equals("jump")){
+            System.out.println("King - \"No, Simon says jump\""); 
+            response = shane.nextLine();
+        }
+        System.out.println("King - \"Round Two- Simon says sit\"");
+        if(!response.equals("sit")){
+            System.out.println("King - \"No, Simon says sit\"");
+            response = shane.nextLine();
+        }
+        System.out.println("Shane is speechless; he seems to be in shock by your talent and skill in Simon says.");
+        shane.nextLine();
+        System.out.println("King - \"I am, I dont understand I... nobody has gotten this fa...\"");
+        shane.nextLine();
+        System.out.println("Dr. Shlom - \"A deal is a deal, now hand my fuel\"");
+        shane.nextLine();
+        System.out.println("King - \"Alright, I, I just do not understand. I JUST DO NOT UNDERST...\"");
+        shane.nextLine();
+        System.out.println("The king hands over the fuel, and you make your way back to the ship; You hear him muttering curses.");
+        x.addFuel();
     }
     
     public String recieved() {

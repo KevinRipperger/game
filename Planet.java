@@ -32,7 +32,9 @@ public class Planet extends Place
             quest = new Quest(" "," ",y,x);
         }
         if (y==2 && x==1) {
-            quest = new Quest(" "," ",y,x);
+            quest = new Quest("Youranus","",y,x);
+            super.setDescription("Very similar size to the one in Earth's Solar System, except this one is one million lightyears away.");
+            quest.getYourAnus(p);
         }
         if (y==2 && x==2) {
             quest = new Quest(" "," ",y,x);
