@@ -203,6 +203,29 @@ public class Quest extends NamedThing {
         x.addFuel();
     }
 
+    public void getBarnGlob(Phillip x){
+        String response="";
+        Scanner shane = new Scanner(System.in);
+        System.out.print("You decide to explore the planet of Barn-Glob to look for fuel.");
+        shane.nextLine();
+        System.out.print("When you land on the planet, all you can smell are farts from the distant planet. Pretty pungent, you think.");
+        shane.nextLine();
+        System.out.print("You only see a casino in the distance and decide to see if someone has fuel there.");
+        shane.nextLine();
+        System.out.println("When you arrive at the casino, an alien that looks similar to a horse approaches you with chips in his hand.");
+        shane.nextLine();
+        System.out.println("HAY there NEIGH-bor, wanna play some blackJACK? Why dont you GALLOP on over here and play. Don't STALLion, we are in a hurry!");
+        shane.nextLine();
+        System.out.println();
+        System.out.println("Apparently these horses only speak in puns, you think to yourself");
+        shane.nextLine();
+        System.out.println(recieved());
+        /*
+         * blackjack code goes here and i can add more dialogue
+         * within the code so they always win or whatever
+         */
+    }
+    
     public String recieved() {
         String info;
         info = "\n********** QUEST RECIEVED **********\n";

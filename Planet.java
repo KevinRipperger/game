@@ -30,7 +30,9 @@ public class Planet extends Place
             quest = new Quest(" "," ",y,x);
         }
         if (y==1 && x==1) {
-            quest = new Quest(" "," ",y,x);
+            quest = new Quest("Casino Royale","",y,x);
+            super.setDescription("Win enough money to buy fuel through gambling.");
+            quest.getBarnGlob(p);
         }
         if (y==1 && x==2) {
             quest = new Quest(" "," ",y,x);
