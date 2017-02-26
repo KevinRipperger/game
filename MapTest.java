@@ -7,6 +7,8 @@ public class MapTest
         Scanner shane = new Scanner(System.in);
         String input="";
         Map map = phil.getMap();
+        ((Planet)map.getPlace()).getQuest(map.getY(),map.getX(),phil);
+        System.out.print("\f");
         map.printMap(); 
         System.out.println("Fuel - "+phil.getFuel());
         while (!input.equals("q")){

@@ -17,6 +17,10 @@ public class Planet extends Place
     }
     
     public void getQuest(int y, int x, Phillip p) {
+        if (y==0 && x==0) {
+            quest = new Quest("Rescue Vasanth","",y,x);
+            quest.getEarth(p);
+        }
         if (y==0 && x==1) {
             quest = new Quest("Plutonian Interview","",y,x);
             super.setDescription("The president of Pluto wants to ask you a couple questions before they do you a solid and hook you up with some fuel.");
