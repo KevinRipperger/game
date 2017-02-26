@@ -7,6 +7,13 @@
  */
 public class Shop extends Place
 {
-    Item[] inventory;
+
     
+    public Shop(String n, String d) {
+        super (n,d);
+    }
+    
+    public void getQuest(int y, int x, Phillip p) {
+        
+    }
 }

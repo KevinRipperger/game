@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=n\ d\ y\ x
-comment0.target=Planet(java.lang.String,\ java.lang.String,\ int,\ int)
+comment0.params=n\ d
+comment0.target=Shop(java.lang.String,\ java.lang.String)
 comment1.params=y\ x\ p
 comment1.target=void\ getQuest(int,\ int,\ Phillip)
 numComments=2

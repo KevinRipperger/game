@@ -1,8 +1,14 @@
 #BlueJ class context
-comment0.params=n\ d
-comment0.target=Quest(java.lang.String,\ java.lang.String)
-comment1.params=
-comment1.target=Item\ complete()
-comment2.params=
-comment2.target=java.lang.String\ toString()
-numComments=3
+comment0.params=n\ d\ y\ x
+comment0.target=Quest(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.params=x
+comment1.target=void\ getEarth(Phillip)
+comment2.params=x
+comment2.target=void\ getPluto(Phillip)
+comment3.params=
+comment3.target=java.lang.String\ recieved()
+comment4.params=x\ rew
+comment4.target=void\ complete(Phillip,\ int)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

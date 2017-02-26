@@ -5,7 +5,7 @@
  * @author Kevin Ripperger & Shane Simon
  * 2/21/17
  */
-public class Place extends NamedThing {
+public abstract class Place extends NamedThing {
     private String status;
     public Place() {
         status = "?";
@@ -27,6 +27,8 @@ public class Place extends NamedThing {
     public void setStatus(String x) {
         status = x;
     }
+    
+    public abstract void getQuest(int y, int x, Phillip p);
     
     public String toString() {
         return status;
