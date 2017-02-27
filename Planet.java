@@ -27,7 +27,10 @@ public class Planet extends Place
             quest.getPluto(p);
         }
         if (y==1 && x==0) {
-            quest = new Quest(" "," ",y,x);
+            
+            quest = new Quest("Flab 244's Got Talent!","",y,x);
+            super.setDescription("Win the talent show and beat the minions!");
+            quest.getFlab(p);
         }
         if (y==1 && x==1) {
             quest = new Quest("Casino Royale","",y,x);
@@ -35,7 +38,9 @@ public class Planet extends Place
             quest.getBarnGlob(p);
         }
         if (y==1 && x==2) {
-            quest = new Quest(" "," ",y,x);
+            quest = new Quest("Flab 244's Got Talent!","",y,x);
+            super.setDescription("Win the talent show and beat the minions!");
+            quest.getFlab(p);
         }
         if (y==2 && x==1) {
             quest = new Quest("Youranus","",y,x);

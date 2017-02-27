@@ -149,7 +149,7 @@ public class Quest extends NamedThing {
             System.out.println("Fuel - "+x.getFuel());
         }
     }
-    
+
     public void getYourAnus(Phillip x) {
         String response="";
         Scanner shane = new Scanner(System.in);
@@ -212,12 +212,17 @@ public class Quest extends NamedThing {
         shane.nextLine();
         System.out.print("You only see a casino in the distance and decide to see if someone has fuel there.");
         shane.nextLine();
-        System.out.println("When you arrive at the casino, an alien that looks similar to a horse approaches you with chips in his hand.");
+        System.out.print("When you arrive at the casino, an alien that looks similar to a horse approaches you with chips in his hand.");
         shane.nextLine();
-        System.out.println("HAY there NEIGH-bor, wanna play some blackJACK? Why dont you GALLOP on over here and play. Don't STALLion, we are in a hurry!");
+        System.out.println("\"HAY there NEIGH-bor, wanna play some blackJACK? Why dont you GALLOP on over here and play. Don't STALLion, we are in a hurry!\"");
         shane.nextLine();
-        System.out.println();
-        System.out.println("Apparently these horses only speak in puns, you think to yourself");
+        System.out.println("I will give you some FOAL if you are the prize horse!\"");
+        shane.nextLine();
+        System.out.println("Do you mean fuel?");
+        shane.nextLine();
+        System.out.println("\"Of course, stop being WHINNY!\"");
+        shane.nextLine();
+        System.out.println("Apparently these horses only speak in puns, but I do need fuel... you think to yourself");
         shane.nextLine();
         System.out.println(recieved());
         /*
@@ -225,7 +230,64 @@ public class Quest extends NamedThing {
          * within the code so they always win or whatever
          */
     }
-    
+
+    public void getFlab(Phillip x){
+        String response="";
+        Scanner shane = new Scanner(System.in);
+        System.out.print("The moment you land on the planet you are surrounded by a bunch of identical, overweight looking minions!");
+        shane.nextLine();
+        System.out.print("\"Hello, I am Minion 20473\" says one of them. \"I am minion 19410, it is nice to meet you\" says another.");
+        shane.nextLine();
+        System.out.print("You are initially taken aback by the odd creatures, but quickly feel as if they are very welcoming and relatable to your struggle.");
+        shane.nextLine();
+        System.out.println("You tell them about your story and how the disgusting BLEEM took your apprentice Vasanth.");
+        shane.nextLine();
+        System.out.println("Minion 38294 then walks up to you and says: \"What an emotional and inspiring story. Why don't you participate in our talent show? It may help take your mind off things\"");
+        shane.nextLine();
+        System.out.println("\"Sounds chill, I think.\"");
+        shane.nextLine();
+        System.out.println(recieved());
+        shane.nextLine();
+        System.out.println("\"So, what is your talent??\"");
+        response = shane.nextLine();
+        System.out.println("\"Wow! " + response + " is pretty cool! I think you have a good shot at winning!\"");
+        shane.nextLine();
+        System.out.println("\"The other contestant is Minion 5933 who is a stand up comic.\"");
+        shane.nextLine();
+        System.out.println("\"Lets start!\"");
+        shane.nextLine();
+        System.out.println("\"First up is Minion 5933!!! Give it up for 5933!");
+        shane.nextLine();
+        System.out.println("All the minions clap for Minion 5933.");
+        shane.nextLine();
+        System.out.println("Minion 5933: \"How does a train eat???");
+        shane.nextLine();
+        System.out.println("The crowd is silent and a cricket chirps.");
+        shane.nextLine();
+        System.out.println("It goes chew chew!!!");
+        shane.nextLine();
+        System.out.println("No one laughs and themcrowd throws tomatoes at Minion 5933 and boos at him. You laugh at how dumb the joke was but hide your laughter.");
+        shane.nextLine();
+        System.out.println("\"Well, now that that horrendous act is over, lets see how Shlom here will do!\"");
+        shane.nextLine();
+        System.out.println("\"Give it up for Phillip Shlom, with his act of " + response + "!!!!\"");
+        shane.nextLine();
+        System.out.println("You are very nervous considering how the minions reacted to Minion 5933's performance. However, this is your time to shine and get some fuel!:");
+        shane.nextLine();
+        System.out.println("The audience sits in silence for a second...");
+        shane.nextLine();
+        System.out.println("But then they burst out in claps and yells of joy!");
+        shane.nextLine();
+        System.out.println("Minion 20473 approaches you and congratulates you for your success in the talent show!");
+        shane.nextLine();
+        System.out.println("\"Here is some fuel for you to find your friend Vasanth!");
+        shane.nextLine();
+        complete(x,reward);
+        System.out.print("\f");
+        x.getMap().printMap(); 
+        System.out.println("Fuel - "+x.getFuel());
+    }
+
     public String recieved() {
         String info;
         info = "\n********** QUEST RECIEVED **********\n";
