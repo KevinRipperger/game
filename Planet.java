@@ -27,10 +27,9 @@ public class Planet extends Place
             quest.getPluto(p);
         }
         if (y==1 && x==0) {
-            
-            quest = new Quest("Flab 244's Got Talent!","",y,x);
-            super.setDescription("Win the talent show and beat the minions!");
-            quest.getFlab(p);
+            quest = new Quest("The Penguin Riddler","",y,x);
+            super.setDescription("Beat all the Riddler's riddles to win the fuel!");
+            quest.getArcimula(p);
         }
         if (y==1 && x==1) {
             quest = new Quest("Casino Royale","",y,x);

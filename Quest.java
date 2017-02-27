@@ -79,6 +79,7 @@ public class Quest extends NamedThing {
         System.out.println("King - \"Oh of course! Here on Pluto we have PLENTY of fuel for space travel! I will give you some, but I want to interview you first. As you can see, the people"+ 
             " of Pluto are very excited to see you!\"");
         shane.nextLine();
+        System.out.println("\f");
         System.out.println(recieved());
         System.out.println("Dr. Shlom - \"Sounds chill.\"");
         shane.nextLine();
@@ -168,6 +169,7 @@ public class Quest extends NamedThing {
         System.out.println("Dr. Shlom - \"God Damnit\"");
         shane.nextLine();
         System.out.println("\f");
+        System.out.println(recieved());
         System.out.println("   _____ _                          _____                 ");
         System.out.println("  / ____(_)                        / ____|                ");
         System.out.println(" | (___  _ _ __ ___   ___  _ __   | (___   __ _ _   _ ___ ");
@@ -224,6 +226,7 @@ public class Quest extends NamedThing {
         shane.nextLine();
         System.out.println("Apparently these horses only speak in puns, but I do need fuel... you think to yourself");
         shane.nextLine();
+        System.out.println("\f");
         System.out.println(recieved());
         /*
          * blackjack code goes here and i can add more dialogue
@@ -246,6 +249,7 @@ public class Quest extends NamedThing {
         shane.nextLine();
         System.out.println("\"Sounds chill, I think.\"");
         shane.nextLine();
+        System.out.println("\f");
         System.out.println(recieved());
         shane.nextLine();
         System.out.println("\"So, what is your talent??\"");
@@ -256,31 +260,97 @@ public class Quest extends NamedThing {
         shane.nextLine();
         System.out.println("\"Lets start!\"");
         shane.nextLine();
-        System.out.println("\"First up is Minion 5933!!! Give it up for 5933!");
+        System.out.println("\"First up is Minion 5933!!! Give it up for 5933!\"");
         shane.nextLine();
         System.out.println("All the minions clap for Minion 5933.");
         shane.nextLine();
-        System.out.println("Minion 5933: \"How does a train eat???");
+        System.out.println("Minion 5933: \"How does a train eat???\"");
         shane.nextLine();
         System.out.println("The crowd is silent and a cricket chirps.");
         shane.nextLine();
-        System.out.println("It goes chew chew!!!");
+        System.out.println("\"It goes chew chew!!!\"");
         shane.nextLine();
-        System.out.println("No one laughs and themcrowd throws tomatoes at Minion 5933 and boos at him. You laugh at how dumb the joke was but hide your laughter.");
+        System.out.println("No one laughs and the crowd throws tomatoes at Minion 5933 and boos at him. You laugh at how dumb the joke was but hide your laughter.");
         shane.nextLine();
         System.out.println("\"Well, now that that horrendous act is over, lets see how Shlom here will do!\"");
         shane.nextLine();
         System.out.println("\"Give it up for Phillip Shlom, with his act of " + response + "!!!!\"");
         shane.nextLine();
-        System.out.println("You are very nervous considering how the minions reacted to Minion 5933's performance. However, this is your time to shine and get some fuel!:");
+        System.out.println("You are very nervous considering how the minions reacted to Minion 5933's performance. However, this is your time to shine and get some fuel!(Type in your performance):");
         shane.nextLine();
         System.out.println("The audience sits in silence for a second...");
         shane.nextLine();
-        System.out.println("But then they burst out in claps and yells of joy!");
+        System.out.println("But then they burst out in applause and yells of joy!");
         shane.nextLine();
         System.out.println("Minion 20473 approaches you and congratulates you for your success in the talent show!");
         shane.nextLine();
-        System.out.println("\"Here is some fuel for you to find your friend Vasanth!");
+        System.out.println("\"Here is some fuel for you to find your friend Vasanth!\"");
+        shane.nextLine();
+        complete(x,reward);
+        System.out.print("\f");
+        x.getMap().printMap(); 
+        System.out.println("Fuel - "+x.getFuel());
+    }
+
+    public void getArcimula(Phillip x){
+        String response="";
+        Scanner shane = new Scanner(System.in);
+        System.out.print("You fly to the really cold planet of Arcimula and land you ship on what seems to be a frozen lake.");
+        shane.nextLine();
+        System.out.print("It is freezing! This is nothing like the weather at UCSD!!!");
+        shane.nextLine();
+        System.out.print("You are tempted to get gas just to go back to the warmth of La Jolla and abandon Vasanth but you know that that isn't right.");
+        shane.nextLine();
+        System.out.print("While lost in your thoughts, a mysterious looking penguin approaches you--scaring you half to death.");
+        shane.nextLine();
+        System.out.print("\"Hello Phillip. I am the Penguin Riddler, the only inhabitant of the planet of Arcimula.\"");
+        shane.nextLine();
+        System.out.print("\"Oh hi there.\" you say fearfully. You notice that he is holding onto a fuel canister very tightly. He doesn't seem to want to give it up.");
+        shane.nextLine();
+        System.out.print("\"Stop eyeballing my fuel you freak. If you want to get some of this fuel, you will need to answer my riddles!\"");
+        shane.nextLine();
+        System.out.println("\"Do you accept my challenge? If you do not pass the riddles, you will DIE!\"");
+        response = shane.nextLine();
+        if(response.equalsIgnoreCase("no")){
+            System.out.println("\"Well too bad. You are trapped on this planet anyways so you kinda have to do this.");
+            shane.nextLine();
+        }
+        System.out.print("\"Great let us begin!\"");
+        shane.nextLine();
+         System.out.println("\f");
+        System.out.println(recieved());
+        shane.nextLine();
+        String res = "";
+        System.out.print("\"Your first riddle is: What loses its head in the morning, but gets it back at night?\"");
+        res = shane.nextLine();
+        while(!res.equalsIgnoreCase("pillow") || !res.equalsIgnoreCase("a pillow")){
+            System.out.println("Incorrect!!! What do you put your head on at night you fool???");
+            res = shane.nextLine();
+            shane.nextLine();
+        }
+        System.out.print("\"Correct! Maybe you aren't that foolish!\"");
+        shane.nextLine();
+        System.out.print("\"The next riddle is: What two things can you never eat for breakfast?\"");
+        res = shane.nextLine();
+        while(!res.equalsIgnoreCase("lunch and dinner") || !res.equalsIgnoreCase("dinner and lunch")){
+            System.out.println("Incorrect!!! What are the other two meals you fool???");
+            res = shane.nextLine();
+            shane.nextLine();
+        }
+        System.out.print("\"Correct! Hmmmm... you are pretty good at this! I will give you one more.\"");
+        shane.nextLine();
+        System.out.print("\"The last riddle is: What is brown and sticky?\"");
+        res = shane.nextLine();
+        while(!res.equalsIgnoreCase("stick") || !res.equalsIgnoreCase("a stick")){
+            System.out.println("Incorrect!!! The answer is literally in the question are you ok??");
+            res = shane.nextLine();
+            shane.nextLine();
+        }
+        System.out.print("\"Correct!!!! You win!\"");
+        shane.nextLine();
+        System.out.print("\'Wow you actually won. I was hoping I was gonna be able to kill someone today... guess not.\"");
+        shane.nextLine();
+        System.out.print("\"Here is your reward!\"");
         shane.nextLine();
         complete(x,reward);
         System.out.print("\f");
